@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <label class="mt-4" for="">Product Name</label>
+        <input id="ProductName" class="form-control mb-3">
+        <label for="">Product Price</label>
+        <input id="ProductPrice" class="form-control mb-3">
+        <label for="">Product Category</label>
+        <input id="ProductCategory" class="form-control mb-3">
+        <label for="">Product Desc</label>
+        <textarea id="ProductDesc" class="form-control mb-3"></textarea>
+        <button id="BTN" class="btn btn-info mb-5">Add Product</button>
+
+        <div class="w-50 mx-auto my-5">
+
+<input onkeyup="SearchProduct()" id="term" class="form-control w-100" placeholder="Search by Product Name">
+<div id="SearchSug" class="w-100"></div>
+
+
+
+        </div>
+
+
+        <table class="table">
+
+<thead class="text-center">
+<td>Product Name</td>
+<td>Product Price</td>
+<td>Product Category</td>
+<td>Product Desc</td>
+<td>Update</td>
+<td>Delete</td>
+</thead>
+
+<tbody id="productsum" class="text-center">
+    
+   
+</tbody>
+        </table>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="js/myjs.js"></script>
+</body>
+
+</html>
